@@ -26,13 +26,16 @@ else{
      let resultadoMayus = " ";
 
 for (let i = 0; i < hacker1.length; i++) {
-    resultadoMayus = hacker1[i].toUpperCase() + " ";
-    console.log(resultadoMayus);
+    resultadoMayus += hacker1[i].toUpperCase() + " ";
 }
+console.log(resultadoMayus);
+
+    resultadoReverse = "";
 for (let i = hacker1.length - 1; i >=0 ; i--) {
-    const resultadoReverse = hacker1[i];
-    console.log(resultadoReverse);
+     resultadoReverse += hacker1[i];
 }
+console.log(resultadoReverse);
+
      let compare = hacker1.localeCompare(hacker2);
      console.log(compare)
      if (compare  < 0) {
