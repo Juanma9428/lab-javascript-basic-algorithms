@@ -33,3 +33,48 @@ for (let i = hacker1.length - 1; i >=0 ; i--) {
     const resultadoReverse = hacker1[i];
     console.log(resultadoReverse);
 }
+     let compare = hacker1.localeCompare(hacker2);
+     console.log(compare)
+     if (compare  < 0) {
+        console.log("The driver's name goes first");
+        }
+        else if (compare = 0){
+            console.log("Yo, the navigator goes first, definitely.");
+        }
+            else{
+                console.log("What?! You both have the same name?");
+         }
+     
+      
+
+    const longTest = "Lorem fistrum pupita condemor torpedo. Ese que llega pecador et va usté muy cargadoo a wan de la pradera torpedo et benemeritaar. A wan diodeno por la gloria de mi madre ahorarr por la gloria de mi madre ese que llega pupita amatomaa de la pradera no te digo trigo por no llamarte Rodrigor. Va usté muy cargadoo tiene musho peligro me cago en tus muelas quietooor no puedor quietooor está la cosa muy malar te voy a borrar el cerito hasta luego Lucas apetecan amatomaa. Sexuarl tiene musho peligro fistro amatomaa al ataquerl a peich. No te digo trigo por no llamarte Rodrigor condemor te va a hasé pupitaa ahorarr ese hombree ese pedazo de qué dise usteer me cago en tus muelas llevame al sircoo. Fistro amatomaa me cago en tus muelas amatomaa diodenoo benemeritaar se calle ustée caballo blanco caballo negroorl condemor. Está la cosa muy malar va usté muy cargadoo a wan diodenoo está la cosa muy malar caballo blanco caballo negroorl la caidita a peich. ";
+    let wordText = "";
+    let count = 0;
+    let countText = 0;
+ for (let i = 0; i < longTest.length; i++) {
+    if (longTest[i] !== "," && longTest[i] !== "."){
+        if(longTest[i] !== " "){
+            wordText += longTest[i];
+             
+        }else{
+            if(wordText === "et"){
+                count++;
+            }
+            if(wordText !== ""){
+                countText++  
+            }
+            console.log(wordText);
+            wordText ="";
+        }
+    
+     }
+    
+}
+console.log(count)
+console.log(countText)
+
+
+
+
+
+
